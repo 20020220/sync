@@ -1,0 +1,40 @@
+véges mértani sorozat összege
+a1*(1-q^n)/(1-q)
+a1=első elem
+q=kvóciens, szorzó, a2/a1
+
+végtelen mértani sorozat összege
+1/(1-q) * a1
+
+számtani sorozat összege
+n*(a1+an)/2
+a1=első elem
+an=utolsó elem, a1+(n-1)*d
+d=különbség, a2-a1
+
+
+q^n határértéke
+lim(q^n)
+-1<q<1 lim=0
+q=1 lim=1
+q>1 lim=inf
+í<=-1 lim=nincs
+
+
+határérték azonosságok
+(x)^(1/n)=1 x>0
+(n)^(1/n)=1
+(n^x)^(1/n)=1
+1/n^x=n^-x
+
+inf+inf = inf-inf = inf/inf = int*inf = hiba
+
+
+négyzetösszeg
+sum(n^2) = n(n+1)(2n+1)/6
+
+
+
+
+
+

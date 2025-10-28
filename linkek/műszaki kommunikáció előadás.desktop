@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Index of /iitkgy/do/MUSZKOM/EA
+Exec=/snap/brave/548/opt/brave.com/brave/brave-browser --profile-directory=Default --ignore-profile-directory-if-not-exists https://mandarin.iit.uni-miskolc.hu/iitkgy/do/MUSZKOM/EA/
+Icon=/home/peter/snap/brave/548/.config/BraveSoftware/Brave-Browser/Default/Web Shortcut Icons/shortcut-796881e8b03df2eebb9875456bface8e.png
+URL=https://mandarin.iit.uni-miskolc.hu/iitkgy/do/MUSZKOM/EA/
+Comment=Open https://mandarin.iit.uni-miskolc.hu/iitkgy/do/MUSZKOM/EA/ in a new tab in Brave.

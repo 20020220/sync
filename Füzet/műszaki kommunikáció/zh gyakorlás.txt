@@ -1,0 +1,105 @@
+huffman kódolás
+
+emeketteskellemetlen
+
+e 8
+m 2
+k 2
+t 3
+s 1
+l 3
+n 1
+
+n 1
+s 1
+m 2
+k 2
+t 3
+l 3
+e 8
+
+             20
+      /              \
+     9                 11
+    /  \              /   \
+    4    5           l3   e8
+   / \   / \
+  2  m2  k1 t3
+ / \
+n1 s1
+
+n 0000
+s 0001
+m 001
+k 010
+t 011
+l 10
+e 11
+
+
+t e te tet et ete tete te
+
+t 1
+e 2
+te 3
+tet 4
+et 5
+ete 6
+tete 7
+
+
+rsa
+
+p=11
+q=13
+e=7
+
+n=q*p=143
+
+p(n)=(q-1)(p-1)=120
+
+e=7
+
+d=?
+120=7*17+1
+1=120 -7*17
+e=1
+
+
+rsa2
+
+
+p=17
+q=23
+N=391
+p(n)=352
+e=7
+352=7*50+2
+7=2*3+1
+1=7-(352-750)*3
+352-151=201/d
+c=m^e mod N=3^7 mod 391
+m=C^d mod N=x^201 mod 391 = 3
+
+
+kombinatorika
+
+lehetséges kombinációk, ismétlődés
+
+zarth37y1
+
+8001 kombináció
+bitek: 8192 = 2^13
+paritás: 13+1 = 14
+
+
+
+30 egér 
+40 billentyűzet
+20 elemű minta
+egerek aránya maximum 20% = max 4 egér
+
+(40 20) (40 19) * (20 1) (40 18) * (20 2)
+
+zh
+rsa, huffman, zrw, kombinatorika bit entrópia redundancia
