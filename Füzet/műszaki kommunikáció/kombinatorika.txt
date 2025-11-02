@@ -1,0 +1,5 @@
+P = lehetőségek száma
+
+I = log(2)(1/P)
+
+Entrópia = H = sum(Pi*log(1/pi))
