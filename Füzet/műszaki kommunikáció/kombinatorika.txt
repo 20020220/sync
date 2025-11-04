@@ -1,5 +1,38 @@
-P = lehetőségek száma
+Kiválasztás tipusai:
 
-I = log(2)(1/P)
+Permutáció:
+Minden element tartalmaz, számít a sorrend.
+n: összes elem
+n1,n2,...: azonos elemek száma
+	ismétlés nélkül: P(n)=n!
+	ismétléssel: P(n;n1,n2,...)=n!/(n1!*n2!*...)
 
-Entrópia = H = sum(Pi*log(1/pi))
+Variáció:
+Részhalmaz, számít a sorrend.
+n: összes elem
+k: kiválasztott elemek
+	ismétlés nélkül: V(n,k)=n!/(n-k)!
+	ismétléssel: V(n,k)=n^k
+
+Kombináció:
+Részhalmaz, nem számít a sorrend.
+n: összes elem
+k: kiválasztott elemek
+"n alatt a k" számológépen "nCr" 
+	ismétlés nélkül: C(n,k)=(n k)=n!/(k!*(n-k)!)
+	ismétléssel: ((n+k-1) k)
+
+
+Valószinüség:
+P=(kivánt esetek)/(összes eset)
+
+
+Bit érték:
+P: valószinűség
+I=-log(2)(1/P) felfelé kerekítve, legalább 1
+
+
+Entrópia = átlagos információ tartalom = H = -sum(i=1)(P(i)*log(P(i)))
+
+
+Redundancia = R = 1-H/Hmax
