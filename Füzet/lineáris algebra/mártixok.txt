@@ -1,0 +1,104 @@
+szorzás:
+(A,B) * (G,H,I) = (AG+CH+EI, AJ+CK+EL)
+(C,D)	(J,K,L)   (BG+DH+FI, BJ+DK+FL)
+(E,F)		 
+
+A(x,y) * B(y,z) = C(z,x)
+
+
+n-ed rendű egység mátrix:
+E(3) = (100) E(4) = (1000) E(n) = nxn mátrix a főátlón 1esek
+       (010)	    (0100)
+       (001)	    (0010)
+		    (0001)
+		   
+		   
+hatvány:
+A^3 = (A*A)*A
+
+
+inverz mátrix használata:
+A inverze = A^-1
+Csak négyzetes mátrixnak van inverze, aminek a determinánsa nem 0.
+A * A^-1 = E
+A^-1^-1 = A
+A^-n = A^-1^n
+
+inverz definíciója:
+A^-1*A = A*A^-1 = E
+
+determináns:
+A=(A,B,C)
+  (D,E,F)
+  (G,H,I)
+  
+Bármely kiválasztott oszlop vagy sor lehet a determináns alapja.
+A előjelek sakktábla szerűen változnak, bal felső sarokból +al kezdve.
+
+Választott sor: 1
+Felhasznált értékek:A,-B,C
+
+D(A)=A*(E,F;G,H) - B*(D,F;G,I) + C*(D,E;G,H) = A*(EG-FH) - B*(DG-FI) + C*(DE-GH)
+
+M(2x2) determinánsa: főátló sorzata - mellékátló szorzata = AD-BC
+
+
+inverz kiszámitása:
+A^-1 = 1/D(A) * adj(A)
+ha D(A)!=0
+
+A adjunktja = adj(A)
+A transzponátja = A^+ = sor és oszlop csere
+A aldeterminánsja = minden érték determinánsja táblázatban
+Sakktábla előjel = minden második elem -. bal fentről +rol indul
+
+adj(A) = A^+ aldeterminánsja sakktábla előjellel
+
+A transzponátja:
+A^+ = (A,D,G)
+      (B,E,H)
+      (C,F,I)
+
+A^+ aldeterminánsja:
+(DA,DB,DC)
+(DD,DE,EF)
+(DG,DH,DI)
+
+sakktábla előjel:
+X=
+(+A,-B,+C)
+(-D,+E,-F)
+(+G,-H,+I)
+
+végeredmény:
+A^-1 = 1/D(A) * X
+
+ellenőrzés:
+A * A^-1 = E
+
+
+szabályok:
+-ha egy-egy sor és oszlop helyet cserél akkor a D előjele változik
+-ha 2 sor vagy oszlop egyenlő akkor D=0
+-ha a determináns 2 sora arányos, D=0
+-ha egy sorhoz vagy oszlophoz hozzáadjuk egy sor vagy oszlop többszöröséz, D értéke nem változik
+-ha két szorzott mátrixnak a főátló kivételével minden értéke 0, akkor az eredmény az azonos helyen lévő értékek szorzata pl: (A,0;0,B) / (C,0;0,D) = (AC,0;BD,0)
+-D(A*B)=D(A)*D(B)
+-A*A^-1 = A^-1*A = E
+-D(A^-1) = 1/D(A)
+-D(A^10) = D(A)^10
+
+
+háromszögek:
+
+felső 3szög:
+(X,X,X)
+(0,X,X)
+(0,0,X)
+a főátló alatt 0
+
+alső 3szög:
+(X,0,0)
+(X,X,0)
+(X,X,X)
+a főátló felett 0

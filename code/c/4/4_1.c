@@ -1,35 +1,45 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-int faktorialis(int szam);
+bool szokoev(int year);
 
 int main()
 {
-    int szam;
+    int also, felso;
     bool ok;
     do
     {
         ok = true;
-        printf("Adja meg a szamot:");
-        scanf("%d", &szam);
-        if (szam >= 0 && szam <= 10)
+        printf("Adja meg az alsó és felső határt");
+        if (scanf("%d,%d", &also, &felso) != 2)
         {
+            printf("Hibás bemenet");
             ok = false;
-            printf("Hibas szam");
+            while (getchar() != "\n")
+                ;
+        }
+        else if (also < 0 || also > felso || felso > 3000)
+        {
+            printf("Hibas adat");
+            ok = false;
         }
     } while (!ok);
-
-    printf("%d szám faktoriálisa: %d", szam, faktorialis(szam));
+    int counter = 0;
+    for (int yr = also; yr <= felso; yr++)
+    {
+        if (szokoev(yr))
+        {
+            printf("Szokoev %d\n", yr);
+            counter++;
+        }
+        else
+            printf("Nem szokoev %d", yr);
+    }
+    printf("Összesen %d", counter);
     return 0;
 }
 
-/** Faktoriális számítása */
-int faktorialis(int input)
+bool szokoev(int year)
 {
-    int sorozat = 1;
-    for (int n = 1; n <= input; n++)
-    {
-        sorozat *= n;
-    }
-    return sorozat;
+    return (year % 4 == 0 && year % 100 != 0 || year % 400 == 0);
 }

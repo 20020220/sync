@@ -1,0 +1,38 @@
+logisztika 7m
+megfelelő
+-termék
+-minőség
+-állapotban
+-helyen
+-időben
+-felhasználóknak
+-költségen
+
+készlettartás inditékai
+-folyamatos működés fenntatrása
+-váratlan helyzetekre való felkészülés
+-
+
+készletek csoportosítása
+
+készletgazdálkodás költségei
+-utánpótlás
+-készlettartás
+-hiány
+
+készlet biztonsága
+
+készletek típusai felhasználás alapján
+-lerakódási készlet
+-keletkezés okai
+
+készletezési mechanizmusok
+működési
+-mikor
+-mennyit
+
+rendelési mennyiség számítása
+C1=CQ/2+CD/Q
+
+q=sqrt(2*20*100/1)
+táblázat értékeit számolja

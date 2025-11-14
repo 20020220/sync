@@ -1,0 +1,41 @@
+CISC, RISC
+cist=egy órajelben több fekladat
+
+
+Erős, gyenge buffer konzisztencia
+gyenge konzisztencia essetén a kiírt szöveg sorrendje nem feltétlenül egyezik meg a végrehajtás sorrendjével. bufferelve van
+
+
+ROB
+kezdet és végmutatóval rendelkező körbuffer. memória kezelés?
+
+
+sín
+egyenes kommunikócáó hardwerek között
+-hatáskör
+-bit átvitel rendje
+
+
+PCI
+párhuzamos busz
+
+
+SATA
+duplex, tehát 2 ér pár
+
+
+ magnetic core meory = ferrit memory
+ felmágnesezi 2 irányba a mágnes gyűrűt. akkor mágnesez ha 2 iranyba folyik
+ kiolvasás után vissza kell irni
+ 
+ 
+non-volaite-memory
+táp lekapcsolása esetén nem veszít adatot mert van rajta tartelék táp
+
+
+DRAM
+szekvenciálsi ram
+
+
+SRAM
+statikus memória. gyors de drága mert sok kapuból áll. nincs bennük kondenzátor

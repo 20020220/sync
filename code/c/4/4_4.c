@@ -17,8 +17,8 @@ int main()
         if (input == 0)
             break;
         total += input;
-        printf("\nÚj összeg: %f", total);
+        printf("\nÚj összeg: %.2f", total);
     }
-    printf("Végső eredmény: %f", total);
+    printf("Végső eredmény: %.2f", total);
     return 0;
 }

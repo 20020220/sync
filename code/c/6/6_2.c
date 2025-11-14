@@ -63,7 +63,6 @@ char read_unit()
             printf("Hibás mértékegység");
             clear_stdin();
             continue;
-            ;
         }
         return target;
         clear_stdin();

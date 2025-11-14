@@ -3,6 +3,16 @@
 
 int price_per_minute[] = {40, 60, 100};
 
+void clear_stdin()
+{
+    while (true)
+    {
+        int c = getchar();
+        if (c == EOF || c == '\n')
+            break;
+    }
+}
+
 int main()
 {
     int total = 0;
@@ -13,6 +23,7 @@ int main()
         if (scanf("%d", &type) != 1 || type < 0 || type > 3)
         {
             printf("\nHibás szám.\n");
+            clear_stdin();
             continue;
         }
         if (type == 0)
@@ -20,15 +31,19 @@ int main()
             printf("\nSzámolás vége, összeg: %iFt\n", total);
             break;
         }
-        int duration;
-        printf("\nAdd meg a időtartamát percben.\n");
-        if (scanf("%d", &duration) != 1)
-        {
-            printf("\nHibás szám.\n");
-            continue;
+        while (true){
+            int duration;
+            printf("\nAdd meg a időtartamát percben.\n");
+            if (scanf("%d", &duration) != 1 || duration<=0)
+            {
+                printf("\nHibás szám.\n");
+                clear_stdin();
+                continue;
+            }
+            int price = price_per_minute[type + 1] * type * duration;
+            total += price;
+            break;
         }
-        int price = price_per_minute[type + 1] * type * duration;
-        total += price;
     }
     return 0;
 }

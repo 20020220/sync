@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=termelés minta zh
+Exec=/snap/brave/563/opt/brave.com/brave/brave-browser --profile-directory=Default --ignore-profile-directory-if-not-exists "https://elearning.uni-miskolc.hu/zart/mod/quiz/view.php?id=65528"
+Icon=/home/peter/snap/brave/563/.config/BraveSoftware/Brave-Browser/Default/Web Shortcut Icons/shortcut-fea492820a0d9e3487f56e9c803df845.png
+URL=https://elearning.uni-miskolc.hu/zart/mod/quiz/view.php?id=65528
+Comment=Open https://elearning.uni-miskolc.hu/zart/mod/quiz/view.php?id=65528 in a new tab in Brave.
