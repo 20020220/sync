@@ -1,0 +1,6 @@
+echo "paraméter 1: $1"
+echo "paraméter 2: $2"
+echo "paraméterek száma: $#"
+echo "folyamat: $$"
+res="expr 1 + 2"
+echo "$res"

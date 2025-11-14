@@ -1,0 +1,24 @@
+két prím p,q
+n = p * q
+Y(n) = (p-1)(q-1)
+e = ?
+1 < 1 < Y(n)
+e és Y(n) relatív prímek (nincs közös osztólyuk)
+
+p=11
+q=13
+n=143
+Y(n)=120
+e=7
+d=103
+
+gcd(e, Y(n))=1
+
+e*x=Y(n)-1
+x=17
+d=-x mod Y(n)
+d=103
+
+
+kódolt üzenet = C = M^e mod n
+dekódolt üzenet = M = C^d mod n
